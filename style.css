@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to right, #00ff7f, #ff0000);
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.seller-badge {
+  background: #e2e3e5;
+  border-radius: 20px;
+  padding: 5px 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 12px;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  margin-top: 20%;
+}
+
+.product-image {
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.add-cart {
+  background: #f8f9fa;
+}
+
+.buy {
+  background: #d63384;
+  color: white;
+}
+
+/* This section is for media quary */
+
+@media (max-width: 1024px) {
+  .product-image div {
+    width: calc(100% / 2);
+  }
+}
+@media (max-width: 834) {
+}
+
+@media (max-width: 768px) {
+  .product-image div {
+    width: calc(100% / 1);
+  }
+}
+@media (max-height: 480px) {
+}
